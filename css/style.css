@@ -13,7 +13,7 @@ html {
   --custom-btn-bg-color: #ca9709;
   --custom-btn-bg-hover-color: #916a00;
   --dark-color: #000000;
-  --p-color: #505050;
+  --p-color: #000000;
   --border-color: #FDB501;
   --link-hover-color: #d9a61a;
 
@@ -94,7 +94,7 @@ h6 {
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -287,7 +287,9 @@ strong {
 .bold {
   font-weight: bold;
 }
-
+.italic{
+  font-style: italic;
+}
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
@@ -513,7 +515,7 @@ strong {
 .sticky-wrapper.is-sticky .navbar {
   background-color: var(--dark-color);
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, #00000000,#00000000, #ffffff41, #ffc400b2, #ffffff41,#00000000, #00000000);
+  border-image: linear-gradient(0.25turn, #00000000, #00000000, #ffffff41, #ffc400b2, #ffffff41, #00000000, #00000000);
   border-image-slice: 1;
 }
 
@@ -891,17 +893,17 @@ strong {
   color: rgb(29, 29, 29);
 }
 
-.gris strong{
+.gris strong {
   margin-top: 8%;
   margin-bottom: 2%;
   text-align: start;
   font-size: 18px;
-  color:rgb(85, 85, 85)
+  color: rgb(85, 85, 85)
 }
 
-.gris i{
+.gris i {
   margin-right: 1%;
-  
+
 }
 
 /*---------------------------------------
@@ -1027,7 +1029,7 @@ strong {
 
 .imagenescarousel {
   box-shadow: -10px 0px 30px rgba(0, 0, 0, 0.123);
-  padding-top: 5%;
+  padding-top: 4%;
   padding-bottom: 3%;
   position: relative;
   overflow: hidden;
@@ -1063,19 +1065,20 @@ strong {
 }
 
 .pricing-section::before {
-  background: rgba(255, 255, 255, 0.2)url('../images/bgsec.png');
+  background: rgba(255, 255, 255, 0.5)url('../images/bgsec.png');
   background-blend-mode: lighten;
-  background-size: 107%;
-  background-position: center top;
+  background-size: 127%;
+  background-position: center 90%;
   background-repeat: no-repeat;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -65%;
+  top: -45%;
   left: 0%;
   z-index: -1;
   transform: scaleY(-1);
+  transform: scaleX(-1);
 }
 
 .pricing-section h2 {
@@ -1272,14 +1275,13 @@ strong {
   margin-top: 2%;
 }
 
-.divider{
-  background: rgba(255, 255, 255, 0.2)url('../images/bgsec.png');
+.divider {
+  background: rgba(255, 255, 255, 0.5)url('../images/bgsec.png');
   background-size: 137%;
   background-blend-mode: lighten;
-  background-position: center 25%;
+  background-position: center 20%;
   background-repeat: no-repeat;
-  padding: 10%;
-
+  padding: 7%;
 }
 
 /*---------------------------------------
@@ -1290,9 +1292,8 @@ strong {
   background: rgba(0, 0, 0, 0.5) url(../images/testi.jpg);
   background-blend-mode: darken;
   background-size: cover;
-  background-size: 130%;
   padding-top: 3%;
-  padding-bottom:10%;
+  padding-bottom: 10%;
   background-repeat: no-repeat;
 }
 
@@ -1305,8 +1306,8 @@ strong {
   font-size: 50px;
 }
 
-.testitulo img{
-  top: 55px;
+.testitulo img {
+  top: 40px;
   position: relative;
   opacity: 0.85
 }
@@ -1321,6 +1322,8 @@ strong {
   border-radius: var(--border-radius-medium);
   box-shadow: 0px 0px 20px rgba(255, 198, 9, 0.185);
   border: 1px solid rgba(221, 188, 0, 0.438);
+  height: 550px;
+  max-height: 550px;
 }
 
 .testim .arrow {
@@ -2089,7 +2092,7 @@ strong {
   height: 30px;
   line-height: 31px;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
-  border: 1px solid rgba(0, 0, 0, 0.384);
+  border: 1px solid rgba(0, 0, 0, 0.26);
 }
 
 .social-icon-link:hover {
@@ -2131,12 +2134,14 @@ strong {
   column-gap: 15px;
   margin-top: 5px;
 }
-.cookiesbox hr{
+
+.cookiesbox hr {
   color: white;
   width: 60%;
 
 }
-.header svg{
+
+.header svg {
   margin-bottom: 7px;
 }
 
@@ -2215,24 +2220,32 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  padding-top: 15%;
+  padding-top: 20%;
   padding-bottom: 2%;
   background-attachment: fixed;
   border-bottom: #af8614;
 }
-.fondo-section p{
-  color:#d1d1d1;
+
+.fondo-section p {
+  color: #d1d1d1;
 }
 
-.otraspaginas{
+.otraspaginas {
   background-color: white;
   padding-top: 4%;
   padding-bottom: 5%;
 }
-.otraspaginas h6{
-color: #d69d00;
-font-size: 20px;
+
+.otraspaginas h5 {
+  color: #d69d00;
 }
+
+.otraspaginas h2 {
+  font-weight: 600;
+  color: black;
+}
+
+
 
 /*---------------------------------------
   ¡¡¡¡¡¡¡¡¡¡¡¡OTRAS PÁGINAS!!!!!!!!!             
@@ -2240,13 +2253,64 @@ font-size: 20px;
 /*---------------------------------------
   SERVICIOS      
 -----------------------------------------*/
-.serviciostotales img {
-
+.fondo-section1 {
+  background: rgba(0, 0, 0, 0.6)url('../images/servicios/sect1.jpg');
+  background-blend-mode: darken;
+  padding-top: 20%;
+  padding-bottom: 2%;
+  background-size: cover;
+  background-position: 5% 70%;
 }
-.serviciostotales h6{
-  color: #616161
+.otraspaginas1 {
+  background-color: white;
+  padding-top: 4%;
+  padding-bottom:0%;
 }
 
+.servicestext {
+  padding-top: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+}
+
+.cajasservicios {
+  margin-top: 8%;
+}
+
+.cajasservicios img {
+  float: right;
+}
+
+.bg-yl {
+  background-color: #ecc14a52;
+  padding: 4%;
+  max-height: 300px;
+  height: 300px;
+}
+
+.bg-gr {
+  background-color: #f1f1f1;
+  padding: 4%;
+  max-height: 300px;
+  height: 300px;
+}
+
+
+.serviciostotales {
+  margin-top: 8%;
+}
+.serviciostotales IMG{
+  border-radius: var(--border-radius-small);
+}
+.serviciostotales h6 {
+  color: #333333
+}
+
+.descubreser{
+  margin-top: 3%;
+  margin-bottom:8%;
+}
 
 
 /*---------------------------------------
@@ -2255,21 +2319,43 @@ font-size: 20px;
 /*---------------------------------------
   FLOTA            
 -----------------------------------------*/
-.textosflota {
-
+.fondo-section2 {
+  background: rgba(0, 0, 0, 0.5)url('../images/flota/flotasect.jpg');
+  background-blend-mode: darken;
+  padding-top: 20%;
+  padding-bottom: 2%;
+  background-size: 115%;
+  background-position: 90% 50%;
 }
-
+.textosflota p{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.textosflota h6 {
+  margin-top: 13%;
+}
+.cochessect{
+  margin-top: 10%;
+}
+.cochessect img{
+  border-radius: var(--border-radius-medium);
+}
 /*---------------------------------------
   ¡¡¡¡¡¡¡¡¡¡¡¡OTRAS PÁGINAS!!!!!!!!!             
 -----------------------------------------*/
 /*---------------------------------------
   TARIFAS       
 -----------------------------------------*/
-
-.textotarifa {
-
-
+.fondo-section3 {
+  background: rgba(0, 0, 0, 0.4)url('../images/tarifas/pexels-conojeghuo-175691.jpg');
+  background-blend-mode: darken;
+  padding-top: 20%;
+  padding-bottom: 2%;
+  background-size: cover;
+  background-position: 5% 20%;
 }
+
+.textotarifa {}
 
 /*--
   TABLA              
@@ -2406,17 +2492,22 @@ font-size: 20px;
 /*---------------------------------------
   MAPA DEL SITIO      
 -----------------------------------------*/
-.mapadelsitio{
+.mapadelsitio {
   padding-top: 4%;
   padding-bottom: 3%;
 }
 
-.mapadelsitio a{
+.mapadelsitio a {
   color: black;
 }
-.mapadelsitio a:hover{
+
+.mapadelsitio a:hover {
   color: #c59100;
   text-decoration: underline;
+}
+
+.site-footer-title3 {
+  margin-top: 10%;
 }
 
 
@@ -2494,7 +2585,7 @@ font-size: 20px;
   .navbar {
     background-color: var(--dark-color);
   }
-  
+
   .navbar-expand-lg .navbar-nav {
     padding-bottom: 30px;
   }
@@ -2591,6 +2682,26 @@ font-size: 20px;
   .sticky-wrapper {
     margin-top: 0px;
   }
+  
+  /* Servicios */
+  .fondo-section1{
+    padding-top: 50%;
+  }
+  .bg-yl{
+    padding:9%;
+  }
+  .bg-gr{
+    padding:9%;
+  }
+  /* tarifas */
+  .fondo-section2{
+    padding-top: 50%;
+  }
+  /* flota */
+  .fondo-section3{
+    padding-top: 50%;
+  }
+
 }
 
 
@@ -2648,12 +2759,15 @@ font-size: 20px;
     width: 190px;
     height: 55px;
   }
-  .custom-border-btn  {
+
+  .custom-border-btn {
     padding: 8px;
   }
-  .custom-btn{
+
+  .custom-btn {
     padding: 8px;
   }
+
   /* hero */
   .hero-section {
     background-image: url('../images/contact.jpg');
@@ -2773,6 +2887,12 @@ font-size: 20px;
 
 
   /* flota */
+  .schedule-section {
+    background-attachment: scroll;
+    background-position: 40% 50%;
+    background-size: 700%;
+  }
+
   .artists-hover {
     margin: 0;
     padding: 10px;
@@ -2780,10 +2900,6 @@ font-size: 20px;
 
   .artists-thumb {
     margin-top: 15%;
-  }
-
-  .schedule-section .col-lg-4:hover {
-    transform: scale(1)
   }
 
   .imagenescarousel {
@@ -2811,10 +2927,12 @@ font-size: 20px;
     margin-bottom: 0%;
   }
 
+
   /* tarifas */
 
   .section-padding2#section_5 {
-    padding-top: 8%;
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
 
   .testim .cont div p {
@@ -2826,7 +2944,8 @@ font-size: 20px;
   }
 
   .pricing-section::before {
-    top: -93%;
+    background-size: 180%;
+    background-position: 20% 46%;
   }
 
   .pricing-section h2 {
@@ -2835,14 +2954,24 @@ font-size: 20px;
 
   }
 
+  .divider {
+    background-size: 160%;
+    background-position: 10% 25%;
+  }
+
 
   /* testimonials */
 
   .testimonials1 {
-    padding-top: 23%;
-    padding-bottom: 26%;
-    background-size: 300%;
+    padding-top: 0%;
+    padding-bottom: 22%;
+    background-size: 400%;
     background-position: top center;
+  }
+
+  .testimonials1 h2 {
+    font-size: 28px;
+    margin-top: 15px;
   }
 
   .testim .cont div p {
@@ -2876,19 +3005,70 @@ font-size: 20px;
     margin-bottom: 15%;
   }
 
+  .section-padding#section_6 {
+    padding-bottom: 10%
+  }
+
   /* footer*/
   .smallertitle {
     font-size: 13px;
   }
 
+  .site-footer-top {
+    background-size: 50%;
+  }
 
+  /*---------------------------------------
+              PÁGINAS DEL MOVIL!!!!!!
+  -----------------------------------------*/
+  /*---------------------------------------
+  *SERVICIOS PAG MOVIL            
+-----------------------------------------*/
+  .fondo-section1 {
+    padding-top: 70%;
+    background-size: 150%;
+    background-position: 15% 20%;
+  }
+
+  .servicestext {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%;
+  }
+
+  .bg-yl {
+    padding: 10%;
+    height: 250px;
+  }
+
+  .bg-gr {
+    padding: 10%;
+    height: 250px;
+  }
 
 
 
 
   /*---------------------------------------
-  TARIFAS PAG MOVIL            
+  *FLOTA PAG MOVIL            
 -----------------------------------------*/
+  .fondo-section2 {
+    padding-top: 70%;
+    background-size: 150%;
+    background-position: 95% 0%;
+  }
+
+
+
+  /*---------------------------------------
+  *TARIFAS PAG MOVIL            
+-----------------------------------------*/
+  .fondo-section3 {
+    padding-top: 70%;
+    background-size: 150%;
+    background-position: 5% -70%;
+  }
+
   .pricing-tag {
     width: 80px;
     height: 80px;
@@ -2912,14 +3092,14 @@ font-size: 20px;
 
 
   /*---------------------------------------
-  CONTACTO PAG MOVIL             
+  *CONTACTO PAG MOVIL             
 -----------------------------------------*/
   .contacto-section {
     padding-top: 45px;
   }
 
   .fondo-section {
-    padding-top: 19%;
+    padding-top: 70%;
   }
 
   .contacto-section h2 {
@@ -2932,18 +3112,6 @@ font-size: 20px;
     font-size: 15px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
