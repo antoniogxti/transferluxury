@@ -195,7 +195,7 @@ strong {
 }
 
 .link-fx-2 {
-  color: black;
+  color: rgb(255, 245, 227);
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -208,7 +208,7 @@ strong {
 }
 
 .link-fx-2:hover {
-  color: bisque;
+  color: rgb(54, 54, 54);
 }
 
 .link-fx-2:hover::before {
@@ -878,33 +878,28 @@ strong {
 
 
 .gris {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .gris h3 {
   margin-top: 4%;
   margin-bottom: 7%;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: var(--secondary-color);
+  line-height: 40px;
+}
+.separa{
+  letter-spacing: 9px;
+}
+.gris img{
+  float:right;
 }
 
-.gris p {
-  text-align: start;
-  color: rgb(29, 29, 29);
+.section-padding#section_3{
+  padding-bottom: 8%;
+  padding-top: 8%;
 }
 
-.gris strong {
-  margin-top: 8%;
-  margin-bottom: 2%;
-  text-align: start;
-  font-size: 18px;
-  color: rgb(85, 85, 85)
-}
-
-.gris i {
-  margin-right: 1%;
-
-}
 
 /*---------------------------------------
                FLOTA            
@@ -920,7 +915,7 @@ strong {
 }
 
 .section-padding#section_4 {
-  padding-bottom: 6%;
+  padding-bottom: 8%;
   padding-top: 8%;
 }
 
@@ -984,8 +979,10 @@ strong {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.titulo-flota p {
+.titulo-flota p{
+  color:rgb(165, 165, 165);
+}
+.t-flotap {
   background: #FCEABB;
   background: linear-gradient(to right, #e6e6e6 0%, #ffbb00 50%);
   -webkit-background-clip: text;
@@ -1082,9 +1079,8 @@ strong {
 }
 
 .pricing-section h2 {
-  margin-bottom: 2%;
-  margin-top: 15%;
-
+  margin-top: 12%;
+  margin-bottom: 5%;
 }
 
 
@@ -1094,9 +1090,7 @@ strong {
   position: relative;
   overflow: hidden;
   padding: 50px;
-
-  background: rgb(255, 255, 255, 0.08)url('../images/golden.jpg');
-  background-blend-mode: lighten;
+  background: url('../images/golden1.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1139,6 +1133,7 @@ strong {
   display: inline-block;
   font-size: 18px;
   margin-right: 15px;
+  color: rgb(255, 255, 255);
 }
 
 .pricing-list {
@@ -1241,6 +1236,7 @@ strong {
 
 .moneytx {
   font-size: 150%;
+  color:#161616
 }
 
 .pricing-thumb .link-fx-1 {
@@ -1252,7 +1248,7 @@ strong {
 }
 
 .p-pricing {
-  color: #505050;
+  color: #424242;
   font-size: 19px;
 }
 
@@ -1272,7 +1268,7 @@ strong {
 }
 
 .btn-tari {
-  margin-top: 2%;
+  padding: 1.5%;
 }
 
 .divider {
@@ -1281,7 +1277,7 @@ strong {
   background-blend-mode: lighten;
   background-position: center 20%;
   background-repeat: no-repeat;
-  padding: 7%;
+  padding: 4%;
 }
 
 /*---------------------------------------
@@ -1306,6 +1302,10 @@ strong {
   font-size: 50px;
 }
 
+.testitulo h4{
+  color: rgb(180, 180, 180);
+  font-style: italic;
+}
 .testitulo img {
   top: 40px;
   position: relative;
@@ -2254,7 +2254,7 @@ strong {
   SERVICIOS      
 -----------------------------------------*/
 .fondo-section1 {
-  background: rgba(0, 0, 0, 0.6)url('../images/servicios/sect1.jpg');
+  background: rgba(0, 0, 0, 0.3)url('../images/servicios/sect1.jpg');
   background-blend-mode: darken;
   padding-top: 20%;
   padding-bottom: 2%;
@@ -2308,7 +2308,7 @@ strong {
 }
 
 .descubreser{
-  margin-top: 3%;
+  margin-top: 0%;
   margin-bottom:8%;
 }
 
@@ -2320,7 +2320,7 @@ strong {
   FLOTA            
 -----------------------------------------*/
 .fondo-section2 {
-  background: rgba(0, 0, 0, 0.5)url('../images/flota/flotasect.jpg');
+  background: rgba(0, 0, 0, 0.4)url('../images/flota/flotasect.jpg');
   background-blend-mode: darken;
   padding-top: 20%;
   padding-bottom: 2%;
@@ -2347,12 +2347,12 @@ strong {
   TARIFAS       
 -----------------------------------------*/
 .fondo-section3 {
-  background: rgba(0, 0, 0, 0.4)url('../images/tarifas/pexels-conojeghuo-175691.jpg');
+  background: rgba(0, 0, 0, 0.3)url('../images/tarifas/pexels-conojeghuo-175691.jpg');
   background-blend-mode: darken;
   padding-top: 20%;
   padding-bottom: 2%;
   background-size: cover;
-  background-position: 5% 20%;
+  background-position: 5% 30%;
 }
 
 .textotarifa {}
@@ -2492,6 +2492,14 @@ strong {
 /*---------------------------------------
   MAPA DEL SITIO      
 -----------------------------------------*/
+.fondo-section5{
+  background: rgba(0, 0, 0, 0.3)url('../images/mapasitio/map.jpg');
+  background-blend-mode: darken;
+  padding-top: 20%;
+  padding-bottom: 2%;
+  background-size: cover;
+  background-position: 5% 30%;
+}
 .mapadelsitio {
   padding-top: 4%;
   padding-bottom: 3%;
@@ -2683,7 +2691,7 @@ strong {
     margin-top: 0px;
   }
   
-  /* Servicios */
+  /* Servicios movil */
   .fondo-section1{
     padding-top: 50%;
   }
@@ -2693,15 +2701,23 @@ strong {
   .bg-gr{
     padding:9%;
   }
-  /* tarifas */
+  .section-padding#section_3{
+    padding-bottom: 15%;
+    padding-top: 20%;
+  }
+
+  /* tarifas movil */
   .fondo-section2{
     padding-top: 50%;
   }
-  /* flota */
+
+  /* flota movil */
   .fondo-section3{
     padding-top: 50%;
   }
-
+  .fondo-section5{
+    padding-top: 50%;
+  }
 }
 
 
@@ -2883,14 +2899,17 @@ strong {
   }
 
   /* servicios */
-
+  .gris {
+    margin-top: 3%;
+  }
 
 
   /* flota */
   .schedule-section {
+    background: rgba(0, 0, 0, 0.80)url('../images/fondovehi.jpg');
     background-attachment: scroll;
     background-position: 40% 50%;
-    background-size: 700%;
+    background-size: 750%;
   }
 
   .artists-hover {
@@ -2910,26 +2929,22 @@ strong {
 
   .gris h3 {
     font-size: 21px;
-    text-align: center;
-
-  }
-
-  .gris span {
-    font-size: 25px;
+    line-height: 30px;
   }
 
   .section-padding#section_4 {
     padding-top: 85px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 
   .titulo-flota {
     margin-bottom: 0%;
   }
-
+  .btn-flota a {
+    padding: 4%;
+  }
 
   /* tarifas */
-
   .section-padding2#section_5 {
     padding-top: 0%;
     padding-bottom: 0%;
@@ -2957,8 +2972,12 @@ strong {
   .divider {
     background-size: 160%;
     background-position: 10% 25%;
+    padding: 7%
   }
 
+  .btn-tari {
+    padding: 4%;
+  }
 
   /* testimonials */
 
@@ -3072,18 +3091,20 @@ strong {
   .pricing-tag {
     width: 80px;
     height: 80px;
-    font-size: 13px;
+    font-size: 11px;
+    line-height: 29px;
   }
 
   .pricing-tag2 {
     width: 80px;
     height: 80px;
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .smallt {
-    top: 47px;
-    right: 25px;
+    top: 50px;
+    right: 30px;
+    font-size: 11px;
   }
 
   .pricing-thumb {
@@ -3111,12 +3132,14 @@ strong {
   .form-control {
     font-size: 15px;
   }
+
+  /*---------------------------------------
+  *MAPA DEL SITIOPAG MOVIL             
+-----------------------------------------*/
+.fondo-section5{
+  padding-top: 70%;
 }
-
-
-
-
-
+}
 
 
 
