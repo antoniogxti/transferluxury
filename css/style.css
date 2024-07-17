@@ -8,14 +8,14 @@ html {
 :root {
   --white-color: #ffffff;
   --primary-color: #c5a318;
-  --secondary-color: #c79816;
+  --secondary-color: #cfb100;
   --section-bg-color: #fdfcfa;
   --custom-btn-bg-color: #ca9709;
-  --custom-btn-bg-hover-color: #916a00;
+  --custom-btn-bg-hover-color: #cfa600;
   --dark-color: #000000;
   --p-color: #000000;
   --border-color: #FDB501;
-  --link-hover-color: #d9a61a;
+  --link-hover-color: rgb(255, 224, 141);
 
   --body-font-family: "Poppins", sans-serif;
 
@@ -405,7 +405,7 @@ strong {
 .custom-btn {
   border: none;
   color: #fff;
-  background-image: linear-gradient(30deg, #a07300, #FDB501);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #9f7e00 8%, #dbbd10 30%, #836b00 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffb100 0%, #b58800 8%, #e3ad16 25%, #655300 62.5%, #ffe600 100%);
   border-radius: var(--border-radius-large);
   background-size: 100% auto;
   font-family: inherit;
@@ -417,15 +417,41 @@ strong {
 
 .custom-btn:hover {
   background-position: right center;
-  background-size: 200% auto;
+  background-size: 1000% auto;
   -webkit-animation: pulse 2s infinite;
   animation: pulse512 1.5s infinite;
   font-weight: 600;
+  color: #e2e2e2;
+  text-shadow: 0px 0px 10px black;
 }
+
+.custom-btn1{
+  border: none;
+  color: #fff;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #3f3300 0%, #9f7e00 8%, #77670a 30%, #836b00 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #644600 0%, #413000 8%, #5e4500 25%, #655300 62.5%, #635900 100%);
+  border-radius: var(--border-radius-large);
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0.6em 1.5em;
+  transition: 1s ease;
+  font-weight: 600;
+}
+
+.custom-btn1:hover {
+  background-position: right center;
+  background-size: 1000% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+  font-weight: 600;
+  color: #e2e2e2;
+  text-shadow: 0px 0px 10px black;
+}
+
 
 @keyframes pulse512 {
   0% {
-    box-shadow: 0 0 0 0 #c98900ce;
+    box-shadow: 0 0 0 0 #c9ab00ce;
   }
 
   70% {
@@ -443,7 +469,7 @@ strong {
   transition: 1s ease;
   border: none;
   color: #fff;
-  background-image: linear-gradient(30deg, #a07300, #FDB501);
+  background-image: linear-gradient(30deg, #a07300, #fdcf01);
   border-radius: var(--border-radius-large);
   background-size: 100% auto;
   font-family: inherit;
@@ -509,18 +535,20 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  margin-top: 51px;
+  margin-top: 50px;
 }
 
 .sticky-wrapper.is-sticky .navbar {
   background-color: var(--dark-color);
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, #00000000, #00000000, #ffffff41, #ffc400b2, #ffffff41, #00000000, #00000000);
-  border-image-slice: 1;
 }
 
 .navbar {
   background: transparent;
+  z-index: 9;
+}
+
+.navbar1 {
+  background: #b588002d;
   z-index: 9;
 }
 
@@ -529,7 +557,9 @@ strong {
   color: var(--white-color);
   font-size: var(--h5-font-size);
   font-weight: var(--font-weight-bold);
-  margin-right: 3%;
+  margin-right: -30%;
+  padding-top: 0;
+  padding-bottom:0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -557,7 +587,7 @@ strong {
 
 .navbar-nav .nav-link1 {
   display: inline-block;
-  color: #ffbb00;
+  color: #ffd000;
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
   position: relative;
@@ -568,7 +598,7 @@ strong {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: #ffbb00;
+  color: #d6af00;
 }
 
 .navbar-toggler {
@@ -876,14 +906,16 @@ strong {
 }
 
 
-
+.autom{
+  margin: 0 auto;
+}
 .gris {
   margin-top: 3%;
 }
 
 .gris h3 {
-  margin-top: 4%;
-  margin-bottom: 7%;
+  margin-top: 2%;
+  margin-bottom: 10%;
   letter-spacing: 2px;
   color: var(--secondary-color);
   line-height: 40px;
@@ -980,7 +1012,7 @@ strong {
   -webkit-text-fill-color: transparent;
 }
 .titulo-flota p{
-  color:rgb(165, 165, 165);
+  color:rgb(206, 206, 206);
 }
 .t-flotap {
   background: #FCEABB;
@@ -1305,6 +1337,7 @@ strong {
 .testitulo h4{
   color: rgb(180, 180, 180);
   font-style: italic;
+  font-weight: 400;
 }
 .testitulo img {
   top: 40px;
@@ -1950,7 +1983,7 @@ strong {
 
 .google-map {
   border-radius: var(--border-radius-medium);
-  margin-top: 2%;
+  width: 60%;
 }
 
 .contact-section a {
@@ -1968,7 +2001,7 @@ strong {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-bottom: 12%;
+  margin-bottom: 9%;
 }
 
 .interested h2 {
@@ -2021,6 +2054,9 @@ strong {
   background-size: 10%;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.site-footer-top h2{
+  font-style: italic;
 }
 
 .site-footer-med {
@@ -2146,7 +2182,7 @@ strong {
 }
 
 .header h2 {
-  color: #ffbb00;
+  color: #f3c600;
   font-weight: 500;
   font-size: 25px
 }
@@ -2237,7 +2273,7 @@ strong {
 }
 
 .otraspaginas h5 {
-  color: #d69d00;
+  color: #d8b802;
 }
 
 .otraspaginas h2 {
@@ -2306,12 +2342,26 @@ strong {
 .serviciostotales h6 {
   color: #333333
 }
+.serviciostotales hr{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: rgb(255, 255, 255);
+}
+.serviciostotales p{
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 .descubreser{
   margin-top: 0%;
   margin-bottom:8%;
 }
 
+
+
+.caption1{
+bottom: 30px;
+}
 
 /*---------------------------------------
   ¡¡¡¡¡¡¡¡¡¡¡¡OTRAS PÁGINAS!!!!!!!!!             
@@ -2334,12 +2384,18 @@ strong {
 .textosflota h6 {
   margin-top: 13%;
 }
-.cochessect{
-  margin-top: 10%;
-}
+
 .cochessect img{
   border-radius: var(--border-radius-medium);
 }
+.cochessect h5{
+  color:var(--secondary-color)
+}
+
+.cochessect hr{
+  width:60%;
+}
+
 /*---------------------------------------
   ¡¡¡¡¡¡¡¡¡¡¡¡OTRAS PÁGINAS!!!!!!!!!             
 -----------------------------------------*/
@@ -2354,8 +2410,6 @@ strong {
   background-size: cover;
   background-position: 5% 30%;
 }
-
-.textotarifa {}
 
 /*--
   TABLA              
@@ -2718,11 +2772,19 @@ strong {
   .fondo-section5{
     padding-top: 50%;
   }
+  /*contacto*/
+  .google-map {
+    width: 100%;
+  }
 }
 
 
 @media screen and (max-width: 767px) {
   .custom-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .custom-btn1 {
     font-size: 14px;
     padding: 10px 20px;
   }
@@ -2734,6 +2796,10 @@ strong {
 
   .sticky-wrapper {
     margin-top: 0px;
+  }
+
+  .google-map {
+    width: 100%;
   }
 }
 
@@ -2765,15 +2831,14 @@ strong {
   p {
     font-size: 16px;
   }
+  .navbar-brand img{
+    width: 200px;
+    height: 53.6px;
+  }
 
   /* HEADER */
   .sticky-wrapper {
     margin-top: 0;
-  }
-
-  .navbar-brand img {
-    width: 190px;
-    height: 55px;
   }
 
   .custom-border-btn {
@@ -2781,6 +2846,9 @@ strong {
   }
 
   .custom-btn {
+    padding: 8px;
+  }
+  .custom-btn1 {
     padding: 8px;
   }
 
@@ -3018,14 +3086,16 @@ strong {
 
   }
 
-
   /* contacto */
   .interested {
     margin-bottom: 15%;
   }
 
   .section-padding#section_6 {
-    padding-bottom: 10%
+    padding-bottom: 15%
+  }
+  .google-map {
+    width: 100%;
   }
 
   /* footer*/
@@ -3050,8 +3120,8 @@ strong {
   }
 
   .servicestext {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
     margin-top: 10%;
   }
 
@@ -3065,8 +3135,18 @@ strong {
     height: 250px;
   }
 
-
-
+  .caption1{
+    top: -45px;
+  }
+  .caption1 h5{
+  font-size: 11px;
+  padding-right: 5%;
+  padding-left: 5%;
+  }
+  .caption1 p{
+    font-size: 9px;
+  }
+  
 
   /*---------------------------------------
   *FLOTA PAG MOVIL            
@@ -3140,7 +3220,6 @@ strong {
   padding-top: 70%;
 }
 }
-
 
 
 
