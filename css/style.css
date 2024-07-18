@@ -195,7 +195,7 @@ strong {
 }
 
 .link-fx-2 {
-  color: rgb(255, 245, 227);
+  color: rgb(0, 0, 0);
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -208,7 +208,7 @@ strong {
 }
 
 .link-fx-2:hover {
-  color: rgb(54, 54, 54);
+  color: rgb(214, 214, 214);
 }
 
 .link-fx-2:hover::before {
@@ -405,7 +405,7 @@ strong {
 .custom-btn {
   border: none;
   color: #fff;
-  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #9f7e00 8%, #dbbd10 30%, #836b00 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffb100 0%, #b58800 8%, #e3ad16 25%, #655300 62.5%, #ffe600 100%);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #c7ac2b 0%, #cbab00 8%, #d9ba05 30%, #8f7d00 40%, #ff9b0000 80%), radial-gradient(ellipse farthest-corner at left top, #9d8400 0%, #b59700 8%, #ddc200 25%, #cfae00 62.5%, #ffe6006b 100%);
   border-radius: var(--border-radius-large);
   background-size: 100% auto;
   font-family: inherit;
@@ -413,6 +413,8 @@ strong {
   padding: 0.6em 1.5em;
   transition: 1s ease;
   font-weight: 600;
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.76)
+
 }
 
 .custom-btn:hover {
@@ -582,7 +584,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link1 {
   border-radius: var(--border-radius-large);
   margin: 10px;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 
 .navbar-nav .nav-link1 {
@@ -909,13 +911,10 @@ strong {
 .autom{
   margin: 0 auto;
 }
-.gris {
-  margin-top: 3%;
-}
 
 .gris h3 {
-  margin-top: 2%;
-  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-bottom: 9%;
   letter-spacing: 2px;
   color: var(--secondary-color);
   line-height: 40px;
@@ -1122,7 +1121,7 @@ strong {
   position: relative;
   overflow: hidden;
   padding: 50px;
-  background: url('../images/golden1.png');
+  background: url('../images/golden1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1166,6 +1165,8 @@ strong {
   font-size: 18px;
   margin-right: 15px;
   color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.774);
+  letter-spacing: 1px;
 }
 
 .pricing-list {
@@ -2048,7 +2049,7 @@ strong {
 }
 
 .site-footer-top {
-  background: rgba(255, 174, 0, 0.9)url('../images/logo-no-background2.png');
+  background: rgba(255, 196, 0, 0.9)url('../images/logo-no-background2.png');
   background-blend-mode: darken;
   background-repeat: repeat;
   background-size: 10%;
@@ -2370,7 +2371,7 @@ bottom: 30px;
   FLOTA            
 -----------------------------------------*/
 .fondo-section2 {
-  background: rgba(0, 0, 0, 0.4)url('../images/flota/flotasect.jpg');
+  background: rgba(0, 0, 0, 0.5)url('../images/flota/flotasect.jpg');
   background-blend-mode: darken;
   padding-top: 20%;
   padding-bottom: 2%;
@@ -2403,13 +2404,25 @@ bottom: 30px;
   TARIFAS       
 -----------------------------------------*/
 .fondo-section3 {
-  background: rgba(0, 0, 0, 0.3)url('../images/tarifas/pexels-conojeghuo-175691.jpg');
+  background: rgba(0, 0, 0, 0.4)url('../images/tarifas/tarifasect.jpg');
   background-blend-mode: darken;
   padding-top: 20%;
   padding-bottom: 2%;
   background-size: cover;
   background-position: 5% 30%;
 }
+.titulotari{
+margin-right: 15%;
+margin-left: 15%;
+}
+
+.cajatabla{
+  margin-top: 5%;
+}
+
+.cajatablap{
+  padding-right: 25%;
+ }
 
 /*--
   TABLA              
@@ -3026,15 +3039,36 @@ bottom: 30px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.555);
   }
 
+  .pricing-tag {
+    width: 80px;
+    height: 80px;
+    font-size: 11px;
+    line-height: 29px;
+  }
+
+  .pricing-tag2 {
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
+  }
+
+  .smallt {
+    top: 50px;
+    right: 30px;
+    font-size: 11px;
+  }
+
+  .pricing-thumb {
+    padding: 25px;
+  }
+
   .pricing-section::before {
     background-size: 180%;
     background-position: 20% 46%;
   }
 
   .pricing-section h2 {
-
     margin-top: 18%;
-
   }
 
   .divider {
@@ -3122,7 +3156,7 @@ bottom: 30px;
   .servicestext {
     padding-left: 6%;
     padding-right: 6%;
-    margin-top: 10%;
+    margin-top: 2%;
   }
 
   .bg-yl {
@@ -3167,29 +3201,13 @@ bottom: 30px;
     background-size: 150%;
     background-position: 5% -70%;
   }
-
-  .pricing-tag {
-    width: 80px;
-    height: 80px;
-    font-size: 11px;
-    line-height: 29px;
+  .titulotari{
+    margin-left: 6%;
+    margin-right: 6%;
   }
-
-  .pricing-tag2 {
-    width: 80px;
-    height: 80px;
-    font-size: 10px;
-  }
-
-  .smallt {
-    top: 50px;
-    right: 30px;
-    font-size: 11px;
-  }
-
-  .pricing-thumb {
-    padding: 25px;
-  }
+  .cajatablap{
+    padding-right: 10%;
+   }
 
 
   /*---------------------------------------
